@@ -12,10 +12,9 @@ import com.example.demo.service.DemoService;
 @SpringBootTest
 class DemoApplicationTests {
 
-	
 	@Autowired
 	DemoService demoService;
-	
+
 	@Test
 	public void fetchCardInfo() {
 		CardInfoDto cardInfoDto = demoService.fetchCardInfo("45717360");
